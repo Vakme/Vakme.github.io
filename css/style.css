@@ -10,9 +10,18 @@ h1 {
     padding-top: 20px;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
 #black {
-    background: #301934;
-    background-image: url("../img/backback.png");
+    background: #301934 url("../img/backback.png");
     background-size: auto 100%;
     width: 50vw;
     margin: 0;
@@ -23,12 +32,13 @@ h1 {
 .menu {
     position: absolute;
     width: 20%;
-    height: 20%;
     top: 40%;
     left: 40%;
     display: none;
-    padding: 10px;
+    padding: 0 10px;
     border-radius: 5%;
+    text-align: center;
+    font-size: 18px;
 }
 
 #black .menu {
@@ -40,7 +50,7 @@ h1 {
     border: #301934 1px solid;
 }
 
-.my-container:hover {
+#black:hover, #white:hover {
     opacity: 0.8;
 }
 
@@ -60,14 +70,33 @@ h1 {
     float: right;
     left: 0;
     width: 50vw;
-
-
 }
 .middle-text {
     line-height: 100vh;
     vertical-align: center;
     font-family: 'Italianno', cursive;
     font-size: 70px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 15% 0;
+}
+
+#black .menu .menu-list li:first-child {
+
+    border-bottom: white 1px solid;
+
+}
+
+#white .menu .menu-list li:first-child {
+
+    border-bottom: #301934 1px solid;
+
 }
 
 .my-container {
@@ -84,6 +113,22 @@ h1 {
 }
 
 #About {
-    background: url("../img/face.png") no-repeat right top;
+    background: white url("../img/face.png") no-repeat right top fixed;
     background-size:  auto 100%;
+}
+#Contact {
+    background: #301934 url("../img/cracow.png") no-repeat fixed;
+    background-size: cover;
+}
+
+#backToTop {
+    color: white;
+    background: #301934;
+    padding: 10px;
+    border-radius: 5%;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    font-family: 'Italianno', cursive;
+    font-size: 18px;
 }
