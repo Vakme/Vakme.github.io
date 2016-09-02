@@ -27,7 +27,6 @@ a:hover {
     margin: 0;
     color: white;
     text-align: center;
-    overflow:hidden;
 }
 
 .menu {
@@ -44,18 +43,16 @@ a:hover {
 
 #white .and {
     position: absolute;
-    left: -20px;
-    top: 40%;
-    font-size: 90px;
-    font-family: 'Italianno', cursive;
+    top: 10%;
+    text-align: left;
+    left: 17px;
 }
 
 #black .and {
     position: absolute;
-    right: -20px;
-    top: 40%;
-    font-size: 90px;
-    font-family: 'Italianno', cursive;
+    top: 10%;
+    right: 7px;
+    text-align: right;
 }
 
 #black .menu {
@@ -87,7 +84,6 @@ a:hover {
     float: right;
     left: 0;
     width: 50vw;
-    overflow:hidden;
 }
 .middle-text {
     line-height: 100vh;
