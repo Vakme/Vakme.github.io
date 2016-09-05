@@ -1,0 +1,210 @@
+@purple:  #301934;
+
+@thin-border: 1px solid;
+
+.big-background {
+  background-size: auto 100%;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  color: @purple;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: white;
+}
+
+.innerLoad {
+  height: 20%;
+  background: @purple;
+  color: white;
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Italianno', cursive;
+  font-size: 70px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+#black {
+  background: @purple url("../img/backback.png");
+  .big-background;
+  width: 50vw;
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin-left: -50vw;
+}
+
+#black * , #white *{
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  left: 40%;
+  display: none;
+  padding: 0 10px;
+  border-radius: 5%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#white .intro {
+  position: absolute;
+  top: 10%;
+  text-align: left;
+  left: 7px;
+}
+
+#black .intro {
+  position: absolute;
+  top: 10%;
+  right: 7px;
+  text-align: right;
+}
+
+#white .and {
+  position: absolute;
+  left: -35px;
+  top: 40%;
+  font-size: 90px;
+  font-family: 'Italianno', cursive;
+  clip: rect(0px, 80px,100px,3px);
+}
+
+#black .and {
+  position: absolute;
+  right: -20px;
+  top: 40%;
+  font-size: 90px;
+  font-family: 'Italianno', cursive;
+  clip: rect(0px,35px,100px,0px);
+}
+
+#black .menu {
+  border: white @thin-border;
+}
+
+
+#white .menu {
+  border: @purple @thin-border;
+}
+
+#black:hover, #white:hover {
+  filter: brightness(150%);
+}
+
+.my-container:hover .menu {
+  display: block;
+}
+
+.my-container:hover .middle-text {
+  display: none;
+}
+
+#white {
+  text-align: center;
+  background: url("../img/backback2.png") white no-repeat 74% center;
+  background-size:  auto 150%;
+  color: @purple;
+  float: right;
+  left: 0;
+  width: 50vw;
+  margin-right: -50vw;
+}
+.middle-text {
+  line-height: 100vh;
+  vertical-align: center;
+  font-family: 'Italianno', cursive;
+  font-size: 70px;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-list li {
+  padding: 15% 0;
+}
+
+#black .menu .menu-list li:first-child {
+
+  border-bottom: white @thin-border;
+
+}
+
+#white .menu .menu-list li:first-child {
+
+  border-bottom: @purple @thin-border;
+
+}
+
+.my-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.my-container:nth-child(odd) {
+  color: white;
+  background: @purple;
+}
+
+.my-container:nth-child(even) {
+  color: @purple;
+  background: white;
+}
+
+#About {
+  background: white url("../img/face.png") no-repeat right top fixed;
+  .big-background;
+}
+#Contact {
+  background: @purple url("../img/cracow.png") no-repeat fixed;
+  background-size: cover;
+}
+
+#backToTop {
+  color: white;
+  background: @purple;
+  padding: 10px;
+  border-radius: 5%;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  font-family: 'Italianno', cursive;
+  font-size: 18px;
+}
