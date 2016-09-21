@@ -2,7 +2,7 @@
 $(window).load(function() {
         $(".loader").animate({
             'opacity' : "1"
-        }, 1000, function () {
+        }, 1000, function () { /*
             $("#white").delay(500).animate({
                 'marginRight' : "+=50vw" //moves left
             }, 1000, function () {
@@ -24,7 +24,7 @@ $(window).load(function() {
             }).mouseleave(function() {
                 $( "#black .middle-text" ).fadeIn( 500 );
                 $( "#black .menu" ).fadeOut( 500 );
-            });
+            });*/
         });
 });
 
